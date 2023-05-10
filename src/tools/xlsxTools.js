@@ -1,13 +1,13 @@
-import XLSX from 'xlsx';
+var XLSX = require('xlsx');
+const __path = '../files';
 
-const parseJson = (__filename) => {
-    const excelData = XLSX.readFile(__filename);
-    return Object.keys(excelData.Sheets).map((name) => ({
-        name,
-        data: XLSX.utils.sheet_to_json(excelData.Sheets[name], { header: 1, blankrows: true}),
-    }));
+
+
+
+const parseJson = (__filename, __sheetName = null) => {
+    
+    var wb = XLSX.readFile(__filename);
+    
 };
 
-parseJson("../files/yumi.xlsx").forEach((element) => {
-    console.log(element.data)
-})
+parseJson(`${__path}/yumi.xlsx`)
