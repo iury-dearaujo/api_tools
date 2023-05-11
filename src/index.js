@@ -1,4 +1,7 @@
-const app = require('./api/app')
+const app = require('./app');
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 const PORT_NAME = process.env.PORT || 54581;
 
