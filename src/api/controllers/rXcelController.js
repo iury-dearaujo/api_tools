@@ -2,7 +2,9 @@ const xlsx = require('xlsx');
 const PATH_XLSX = process.env.PATH_XLSX || './src/api/files';
 
 const all = (resquest, response) => {
-    console.log(resquest)
+    const _resquest = resquest.headers;
+
+    console.log(_resquest)
 
     const workbook = xlsx.readFile(`${PATH_XLSX}/yumi.xlsx`);
     const worksheet = workbook.Sheets[workbook.SheetNames[0]]
