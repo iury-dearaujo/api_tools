@@ -1,7 +1,8 @@
 const xlsx = require('xlsx');
-const PATH_XLSX = process.env.PATH_XLSX || './src/files';
+const PATH_XLSX = process.env.PATH_XLSX || './src/api/files';
 
-const getAll = (resquest, response) => {
+const all = (resquest, response) => {
+    console.log(resquest)
 
     const workbook = xlsx.readFile(`${PATH_XLSX}/yumi.xlsx`);
     const worksheet = workbook.Sheets[workbook.SheetNames[0]]
@@ -18,5 +19,5 @@ const getAll = (resquest, response) => {
 };
 
 module.exports = {
-    getAll
+    all
 };
