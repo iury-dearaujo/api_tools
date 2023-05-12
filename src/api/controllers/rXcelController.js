@@ -15,7 +15,8 @@ const all = (resquest, response) => {
             'user-agent': resquest.headers['user-agent'],
             'host': resquest.headers['host']
         },
-        "file": dataJ['!ref'].split(":")
+        "file_info": dataJ['!ref'].split(":"),
+        "file": dataJ
     };
     response.status(200).send(dynamicDate);
 };
