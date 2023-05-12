@@ -9,7 +9,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon src/server.js",
-    "dev": "next dev"
+    "dev": "next dev",
+    "build": "tsup src"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
     "xlsx": "file:vendor/xlsx-0.19.3.tgz"
   },
   "devDependencies": {
-    "eslint": "^8.40.0"
+    "eslint": "^8.40.0",
+    "tsup": "^6.7.0"
   }
 }

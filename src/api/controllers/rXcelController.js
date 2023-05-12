@@ -1,5 +1,5 @@
 const xlsx = require('xlsx');
-const PATH_XLSX = process.env.PATH_XLSX || './src/api/files';
+const PATH_XLSX = process.env.PATH_XLSX || './downloads';
 
 const all = (resquest, response) => {
     const _resquest = resquest.headers;
