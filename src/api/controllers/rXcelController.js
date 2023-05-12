@@ -1,4 +1,4 @@
-const xlsx = require('xlsx');
+const xlsx = require('./src/vendor/package/xlsx.js');
 const PATH_XLSX = process.env.PATH_XLSX || './downloads';
 
 const all = (resquest, response) => {
