@@ -4,8 +4,8 @@ const PATH_XLSX = process.env.PATH_XLSX || './downloads';
 const slash = (resquest, response) => {
     const _resquest_H = resquest.headers;
     const _response = resquest;
-    console.log(_response)
-    response.status(200).send();
+    
+    response.status(200).send(_response);
 }
 
 const all = (resquest, response) => {
