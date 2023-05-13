@@ -11,7 +11,7 @@ const all = (resquest, response) => {
     const dynamicDate = {
           "to": "yumi",
           "from": "iury",
-          "msg": "Yu 🥰 sou apaixonado por você!"
+          "msg": "Yu sou apaixonado por você!"
         };/*{
         "resquest": {
             'user-agent': resquest.headers['user-agent'],
