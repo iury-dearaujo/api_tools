@@ -1,6 +1,13 @@
 const xlsx = require('xlsx');
 const PATH_XLSX = process.env.PATH_XLSX || './downloads';
 
+const slash = (resquest, response) => {
+    const _resquest_H = resquest.headers;
+    const _response = resquest;
+    console.log(_response)
+    response.status(200).send();
+}
+
 const all = (resquest, response) => {
     const _resquest = resquest.headers;
 
@@ -20,5 +27,6 @@ const all = (resquest, response) => {
 };
 
 module.exports = {
-    all
+    all,
+    slash
 };
