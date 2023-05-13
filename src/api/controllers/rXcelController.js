@@ -9,17 +9,13 @@ const all = (resquest, response) => {
     const dataJ = worksheet;
 
     const dynamicDate = {
-          "to": "yumi",
-          "from": "iury",
-          "msg": "Yu sou apaixonado por você!"
-        };/*{
         "resquest": {
             'user-agent': resquest.headers['user-agent'],
             'host': resquest.headers['host']
         },
         "file_info": dataJ['!ref'].split(":"),
         "file": dataJ
-    };*/
+    };
     response.status(200).send(dynamicDate);
 };
 
