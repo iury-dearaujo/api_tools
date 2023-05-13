@@ -4,8 +4,6 @@ const PATH_XLSX = process.env.PATH_XLSX || './downloads';
 const all = (resquest, response) => {
     const _resquest = resquest.headers;
 
-    console.log(_resquest)
-
     const workbook = xlsx.readFile(`${PATH_XLSX}/yumi.xlsx`);
     const worksheet = workbook.Sheets[workbook.SheetNames[0]]
     const dataJ = worksheet;
@@ -18,7 +16,7 @@ const all = (resquest, response) => {
         "file_info": dataJ['!ref'].split(":"),
         "file": dataJ
     };
-    response.status(200).send(dynamicDate);
+    response.status(200);
 };
 
 module.exports = {

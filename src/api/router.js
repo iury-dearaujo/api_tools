@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const rXcelController = require('./controllers/rXcelController');
+const rExcelController = require('./controllers/rExcelController');
 
-router.get('/rXcel', rXcelController.all);
+router.get('/excel', rExcelController.all);
+//router.get('/', rExcelController.slash);
 
 module.exports = router;
