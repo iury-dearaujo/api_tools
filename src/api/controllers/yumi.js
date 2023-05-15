@@ -8,6 +8,5 @@ const all = (resquest, response) => {
 }
 
 module.exports = {
-    all,
-    slash
+    all
 };
