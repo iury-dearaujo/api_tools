@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/server.js",
-    "start": "nodemon dist/server.js",
+    "start": "node dist/server.js",
     "build": "tsup src"
   },
   "repository": {
@@ -24,6 +24,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
     "http": "0.0.1-security",
     "multer": "^1.4.5-lts.1",
     "net": "^1.0.2",
